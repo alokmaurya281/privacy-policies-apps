@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Dirt Bike Racing: Offroad 3D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ef7135;
+      --primary-hover: #ff854a;
+      --bg: #0c1014;
+      --card-bg: #141b22;
+      --card-border: #232d38;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --code-bg: #1b232c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.68;
+      padding: 0;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(180deg, #18222c 0%, #0c1014 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 50px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(239, 113, 53, 0.22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(239, 113, 53, 0.15);
+      border: 1px solid rgba(239, 113, 53, 0.4);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+
+    /* Quick Summary Card */
+    .summary-card {
+      background: linear-gradient(135deg, rgba(239, 113, 53, 0.1) 0%, rgba(20, 27, 34, 0.9) 100%);
+      border: 1px solid rgba(239, 113, 53, 0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .summary-card h3 {
+      color: var(--primary);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .summary-card ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .summary-card li {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cfd8e3;
+    }
+
+    .summary-card li::before {
+      content: "✔";
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    /* Policy Content */
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+      transition: border-color 0.2s ease;
+    }
+
+    .section:hover {
+      border-color: rgba(239, 113, 53, 0.4);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2 span.num {
+      background: rgba(239, 113, 53, 0.18);
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 800;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+    }
+
+    p {
+      color: #c9d1d9;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: #1b232c;
+      color: #ffffff;
+      padding: 12px 16px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--card-border);
+      color: #c9d1d9;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      .section { padding: 22px; }
+      .container { margin-top: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">Official Legal Document</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <strong>Dirt Bike Racing: Offroad 3D</strong> &bull; Effective Date: October 2, 2026 &bull; Version 1.0.0
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Quick Summary -->
+    <div class="summary-card">
+      <h3>🚀 Quick Overview of Your Privacy</h3>
+      <ul>
+        <li>No user account or login required</li>
+        <li>Gameplay progress is stored strictly on your device</li>
+        <li>Third-party ads served via certified Google AdMob</li>
+        <li>Compliant with COPPA, GDPR, and CCPA/CPRA</li>
+        <li>Opt-out available for personalized advertising</li>
+      </ul>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <h2><span class="num">1</span>Introduction</h2>
+      <p>
+        Welcome to <strong>Dirt Bike Racing: Offroad 3D</strong> ("we", "our", or "the Game"). We value your privacy and are committed to maintaining transparent practices regarding any data processed when you download, install, and play our game.
+      </p>
+      <p>
+        This Privacy Policy explains what information is collected, how it is used, and the choices you have regarding third-party services like <strong>Google AdMob</strong>. By using the Game, you agree to the collection and use of information in accordance with this policy.
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <h2><span class="num">2</span>Information We Collect & Third-Party SDKs</h2>
+      <p>
+        We do <strong>not</strong> require you to provide personal identifiers like your name, phone number, physical address, or email address to play the game.
+      </p>
+      <p>
+        However, to keep the game free to play, we utilize trusted third-party advertising and analytics services that may collect automated diagnostic and device information:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Service Provider</th>
+              <th>Purpose</th>
+              <th>Data Processed</th>
+              <th>Privacy Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google AdMob</strong></td>
+              <td>Banner, Interstitial & Rewarded Ads</td>
+              <td>Google Advertising ID (AAID), IP address, device model, general location, ad interaction metrics</td>
+              <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy</a></td>
+            </tr>
+            <tr>
+              <td><strong>Google Play Services</strong></td>
+              <td>Game services, achievements, basic platform diagnostics</td>
+              <td>Anonymous device identifiers, OS version, crash telemetry</td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <h2><span class="num">3</span>Google AdMob & Advertising Identifiers</h2>
+      <p>
+        The Game displays advertisements served by <strong>Google AdMob</strong>. These ads may be personalized or non-personalized depending on your region and device settings:
+      </p>
+      <ul>
+        <li>
+          <strong>Personalized Ads:</strong> AdMob may use your device's Google Advertising ID (AAID) and non-precise location to show ads relevant to your interests.
+        </li>
+        <li>
+          <strong>Non-Personalized Ads (Contextual):</strong> In jurisdictions where consent is not provided or for child-directed sessions, ads are contextual and do not use personal profiles.
+        </li>
+        <li>
+          <strong>How to Opt-Out of Personalized Ads:</strong> On your Android device, go to:
+          <br>
+          <em>Settings &rarr; Google &rarr; Ads &rarr; Reset or Delete Advertising ID</em>, or toggle <em>"Opt out of Ads Personalization"</em>.
+        </li>
+      </ul>
+      <p>
+        Learn more about how Google manages data in advertising products at: 
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.
+      </p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <h2><span class="num">4</span>Local Device Storage & Game Data</h2>
+      <p>
+        All your career achievements, unlocked motocross motorcycles, engine tuning upgrades, coins, and best lap times are saved <strong>locally on your physical device</strong> using encrypted lightweight key-value storage (Hive).
+      </p>
+      <p>
+        This game progress data is stored in the app's sandboxed private storage directory and is <strong>never uploaded to external servers</strong> without your explicit knowledge.
+      </p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <h2><span class="num">5</span>Device Permissions</h2>
+      <p>The Game only requests access to essential hardware features needed for responsive gameplay:</p>
+      <ul>
+        <li><strong>VIBRATE / Haptic Feedback:</strong> Used to provide tactile rumble on jumps, landings, and crashes.</li>
+        <li><strong>Motion Sensors (Gyroscope / Accelerometer):</strong> Used exclusively during live racing when Tilt Steering mode is enabled. Sensor data is processed entirely in volatile memory and is never recorded or stored.</li>
+        <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required by Google AdMob to fetch advertisement creatives and check network availability.</li>
+      </ul>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+      <h2><span class="num">6</span>Children's Online Privacy (COPPA Compliance)</h2>
+      <p>
+        We respect children's privacy and comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>.
+      </p>
+      <p>
+        The Game does not intentionally collect personally identifiable information from children under the age of 13. When serving ads in sessions designated for younger audiences, AdMob is configured to request only non-personalized, family-safe advertisements via the Google Mobile Ads SDK flags (<code>tagForChildDirectedTreatment</code>).
+      </p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <h2><span class="num">7</span>GDPR & European Privacy Rights (EEA/UK)</h2>
+      <p>
+        If you are located in the European Economic Area (EEA) or the United Kingdom:
+      </p>
+      <ul>
+        <li>You have the right to access, rectify, or erase any personal data held by third-party ad networks.</li>
+        <li>We integrate Google's User Messaging Platform (UMP) / Consent Management Platform (CMP) where applicable, allowing you to grant, manage, or revoke consent for personalized advertising at any time.</li>
+      </ul>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+      <h2><span class="num">8</span>California Consumer Privacy Rights (CCPA / CPRA)</h2>
+      <p>
+        Under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), California residents have the right to:
+      </p>
+      <ul>
+        <li>Request disclosure of the categories of personal information collected and shared for advertising.</li>
+        <li>Opt-out of the "sale" or "sharing" of personal information for cross-context behavioral advertising (achievable by resetting your Advertising ID in device settings).</li>
+      </ul>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section">
+      <h2><span class="num">9</span>Changes to This Policy</h2>
+      <p>
+        We may update our Privacy Policy periodically to reflect changes in our legal obligations or third-party SDK updates. Any updates will be published directly on this web page with a refreshed "Effective Date" at the top.
+      </p>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="section">
+      <h2><span class="num">10</span>Contact Us</h2>
+      <p>
+        If you have any questions, feedback, or data requests regarding this Privacy Policy, please feel free to contact us at:
+      </p>
+      <p>
+        <strong>Support Email:</strong> <a href="mailto:support@dirtbikeracing.app">support@dirtbikeracing.app</a>
+        <br>
+        <strong>Developer:</strong> Dirt Bike 3D Studio
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Dirt Bike Racing: Offroad 3D. All Rights Reserved. &bull; <a href="#top">Back to top</a>
+  </footer>
+
+</body>
+</html>
